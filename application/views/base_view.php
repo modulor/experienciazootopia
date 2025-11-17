@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/img/favicon/apple-touch-icon.png') ?>">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/img/favicon/favicon-32x32.png') ?>">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/img/favicon/favicon-16x16.png') ?>">
-  <link rel="manifest" href="<?php echo base_url('assets/img/favicon/site.webmanifest') ?>">
+  <link rel="icon" type="image/png" href="<?php echo base_url('assets/img/favicon/favicon-96x96.png') ?>" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="<?php echo base_url('assets/img/favicon/favicon.svg') ?>" />
+  <link rel="shortcut icon" href="<?php echo base_url('assets/img/favicon/favicon.ico') ?>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/img/favicon/apple-touch-icon.png') ?>" />
+  <link rel="manifest" href="<?php echo base_url('assets/img/favicon/site.webmanifest') ?>" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css') ?>">
   <?php
@@ -20,7 +21,7 @@
     }
   }
   ?>
-  <title>Toy Story - 30 años</title>
+  <title>Experiencia Zootopia 2</title>
 </head>
 
 <body>

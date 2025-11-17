@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.34, for macos13 (arm64)
 --
--- Host: 127.0.0.1    Database: toystory30
+-- Host: 127.0.0.1    Database: zootopia2
 -- ------------------------------------------------------
 -- Server version	8.0.24
 
