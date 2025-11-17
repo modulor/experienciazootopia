@@ -1,4 +1,4 @@
-<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para disfrutar la experiencia Toy Story</strong></p>
+<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para disfrutar la experiencia Zootopia 2</strong></p>
 <form action="<?php echo base_url('register/create') ?>" method="post" class="parsley-form">
   <div class="form-group">
     <label for="email">Correo electrónico</label>
@@ -28,9 +28,9 @@
   </div>
   <div class="mt-4">
     <div class="ball">
-      <img src="<?php echo base_url('assets/img/ball.webp') ?>" alt="ball">
+      <img src="<?php echo base_url('assets/img/carrot.webp') ?>" alt="carrot">
     </div>
-    <button type="submit" class="btn btn-primary btn-lg btn-block">
+    <button type="submit" class="btn btn-success btn-lg btn-block">
       Reg&iacute;strate
     </button>
     <div class="text-center">

@@ -38,17 +38,12 @@
               <img src="<?php echo base_url('assets/img/logo.webp') ?>" alt="logo" class="img-fluid mx-auto d-block" style="max-width: 200px;">
             </div>
             <?php $this->load->view($content_view)  ?>
-            <div class="row align-items-center mt-4 mb-4">
-              <div class="col-8 offset-2">
-                <img src="<?php echo base_url('assets/img/logo-cinemex.webp') ?>" alt="Cinemex" class="img-fluid">
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="copyright">&copy; Disney/Pixar</div>
+  <div class="copyright">&copy; Disney</div>
   <script>
     const baseURL = '<?php echo base_url() ?>'
   </script>
