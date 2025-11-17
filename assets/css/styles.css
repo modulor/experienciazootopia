@@ -164,9 +164,13 @@ label,
   padding: 0 20px 20px 0;
 }
 
-.stitch-reservation {
+.nick-and-judy {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.nick-and-judy img {
+  width: 150px;
 }
 
 .ball {

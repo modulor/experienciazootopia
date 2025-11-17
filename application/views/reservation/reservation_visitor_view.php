@@ -1,5 +1,5 @@
-<div class="stitch-reservation">
-  <img src="<?php echo base_url('assets/img/cara-de-papa-no-bg.png') ?>" alt="Toy Story">
+<div class="nick-and-judy">
+  <img src="<?php echo base_url('assets/img/nick-and-judy.png') ?>" alt="Zootopia 2">
 </div>
 <p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para disfrutar la experiencia Zootopia 2</strong></p>
 <form action="<?php echo base_url('reservation/create') ?>" method="post" class="parsley-form">
@@ -15,7 +15,7 @@
   <div id="dates_available_html"></div>
   <div id="total_attendees_html"></div>
   <div class="mt-4">
-    <button id="btn-reservation" type="submit" disabled class="btn btn-secondary btn-lg btn-block">
+    <button id="btn-reservation" type="submit" disabled class="btn btn-success btn-lg btn-block">
       Continuar
     </button>
     <input type="hidden" name="visitors_id" value="<?php echo $visitors_id ?>">
