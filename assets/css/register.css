@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Register
+--------------------------------------------------------------*/
+.register-section_logo {
+  width: 240px;
+}
+
+.stitch {
+  text-align: center;
+}
+
+.stitch img {
+  width: 100px;
+  margin-bottom: -10px;
+}

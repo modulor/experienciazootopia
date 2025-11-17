@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/nexa.ttf") format("truetype"),
+    url("../fonts/nexa.woff") format("woff"),
+    url("../fonts/nexa.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #fcfae6;
+  font-family: "Nexa", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.button-register {
+  opacity: 0;
+
+  animation: fadeIn 1s;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
+}
+
+.video-header {
+  background-color: #0f1f3a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  header video {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-button-area {
+    padding-top: 25.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-button-area {
+    padding-top: 450px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-button-area {
+    padding-top: 750px !important;
+  }
+}
+
+.qr-image {
+  border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+  .main-wrapper {
+    padding-top: 40px;
+  }
+}
+
+label,
+.font-14 {
+  font-size: 14px;
+}
+
+.border-rounded {
+  border-radius: 16px;
+}
+/*--------------------------------------------------------------
+# Parsley
+--------------------------------------------------------------*/
+
+.parsley-errors-list {
+  margin: 0;
+  padding: 0;
+}
+
+.parsley-errors-list > li {
+  list-style: none;
+  color: #f1556c;
+  font-size: 12px;
+}
+
+.parsley-error {
+  border-color: #f1556c;
+}
+
+.parsley-success {
+  border-color: #1abc9c;
+}
+
+#qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 11px;
+  padding: 0 20px 20px 0;
+}
+
+.stitch-reservation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ball {
+  text-align: center;
+}
+
+.ball img {
+  width: 60px;
+}
