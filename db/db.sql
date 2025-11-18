@@ -29,7 +29,7 @@ CREATE TABLE `dates_available` (
   `available` int DEFAULT NULL,
   `attendees_available` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `dates_available` (
 
 LOCK TABLES `dates_available` WRITE;
 /*!40000 ALTER TABLE `dates_available` DISABLE KEYS */;
-INSERT INTO `dates_available` VALUES (12,'2025-09-11','11 septiembre 2025',1,1497);
+INSERT INTO `dates_available` VALUES (1,'2025-11-21','21 noviembre 2025',1,900),(2,'2025-11-22','22 noviembre 2025',1,1200),(3,'2025-11-23','23 noviembre 2025',1,600),(4,'2025-11-28','28 noviembre 2025',1,1200),(5,'2025-11-30','30 noviembre 2025',1,1200),(6,'2025-12-05','05 diciembre 2025',1,1200),(7,'2025-12-06','06 diciembre 2025',1,1200),(8,'2025-12-07','07 diciembre 2025',1,1200);
 /*!40000 ALTER TABLE `dates_available` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -57,7 +57,7 @@ CREATE TABLE `hours_available` (
   `available` int DEFAULT NULL,
   `attendees_available` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `hours_available` (
 
 LOCK TABLES `hours_available` WRITE;
 /*!40000 ALTER TABLE `hours_available` DISABLE KEYS */;
-INSERT INTO `hours_available` VALUES (177,12,'13:00:00','1 PM',1,197),(178,12,'14:00:00','2 PM',1,200),(179,12,'15:00:00','3 PM',1,200),(180,12,'16:00:00','4 PM',1,200),(181,12,'17:00:00','5 PM',1,200),(182,12,'18:00:00','6 PM',1,200),(183,12,'19:00:00','7 PM',1,300);
+INSERT INTO `hours_available` VALUES (1,1,'11:00:00','11 AM',1,150),(2,1,'12:00:00','12 PM',1,150),(3,1,'13:00:00','1 PM',1,150),(4,1,'17:00:00','5 PM',1,150),(5,1,'18:00:00','6 PM',1,150),(6,1,'19:00:00','7 PM',1,150),(7,2,'11:00:00','11 AM',1,150),(8,2,'12:00:00','12 PM',1,150),(9,2,'13:00:00','1 PM',1,150),(10,2,'14:00:00','2 PM',1,150),(11,2,'16:00:00','4 PM',1,150),(12,2,'17:00:00','5 PM',1,150),(13,2,'18:00:00','6 PM',1,150),(14,2,'19:00:00','7 PM',1,150),(15,3,'16:00:00','4 PM',1,150),(16,3,'17:00:00','5 PM',1,150),(17,3,'18:00:00','6 PM',1,150),(18,3,'19:00:00','7 PM',1,150),(19,4,'11:00:00','11 AM',1,150),(20,4,'12:00:00','12 PM',1,150),(21,4,'13:00:00','1 PM',1,150),(22,4,'14:00:00','2 PM',1,150),(23,4,'16:00:00','4 PM',1,150),(24,4,'17:00:00','5 PM',1,150),(25,4,'18:00:00','6 PM',1,150),(26,4,'19:00:00','7 PM',1,150),(27,5,'11:00:00','11 AM',1,150),(28,5,'12:00:00','12 PM',1,150),(29,5,'13:00:00','1 PM',1,150),(30,5,'14:00:00','2 PM',1,150),(31,5,'16:00:00','4 PM',1,150),(32,5,'17:00:00','5 PM',1,150),(33,5,'18:00:00','6 PM',1,150),(34,5,'19:00:00','7 PM',1,150),(35,6,'11:00:00','11 AM',1,150),(36,6,'12:00:00','12 PM',1,150),(37,6,'13:00:00','1 PM',1,150),(38,6,'14:00:00','2 PM',1,150),(39,6,'16:00:00','4 PM',1,150),(40,6,'17:00:00','5 PM',1,150),(41,6,'18:00:00','6 PM',1,150),(42,6,'19:00:00','7 PM',1,150),(43,7,'11:00:00','11 AM',1,150),(44,7,'12:00:00','12 PM',1,150),(45,7,'13:00:00','1 PM',1,150),(46,7,'14:00:00','2 PM',1,150),(47,7,'16:00:00','4 PM',1,150),(48,7,'17:00:00','5 PM',1,150),(49,7,'18:00:00','6 PM',1,150),(50,7,'19:00:00','7 PM',1,150),(51,8,'11:00:00','11 AM',1,150),(52,8,'12:00:00','12 PM',1,150),(53,8,'13:00:00','1 PM',1,150),(54,8,'14:00:00','2 PM',1,150),(55,8,'16:00:00','4 PM',1,150),(56,8,'17:00:00','5 PM',1,150),(57,8,'18:00:00','6 PM',1,150),(58,8,'19:00:00','7 PM',1,150);
 /*!40000 ALTER TABLE `hours_available` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +86,7 @@ CREATE TABLE `reservations` (
   `hours_available_id` int DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,6 @@ CREATE TABLE `reservations` (
 
 LOCK TABLES `reservations` WRITE;
 /*!40000 ALTER TABLE `reservations` DISABLE KEYS */;
-INSERT INTO `reservations` VALUES (1,1,NULL,4,1,1,'2025-05-19 17:51:37'),(2,2,NULL,1,1,2,'2025-05-20 11:24:17'),(3,3,NULL,1,8,128,'2025-05-20 11:25:53'),(4,4,NULL,4,11,161,'2025-05-22 17:42:20'),(5,5,NULL,3,11,171,'2025-08-31 14:21:00'),(6,6,NULL,3,11,171,'2025-08-31 14:23:17'),(7,7,NULL,3,11,171,'2025-08-31 14:33:22'),(8,8,NULL,4,11,164,'2025-09-01 12:19:56'),(9,9,NULL,3,12,177,'2025-09-03 18:06:22');
 /*!40000 ALTER TABLE `reservations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,7 +114,7 @@ CREATE TABLE `visitors` (
   `phone` varchar(255) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +123,6 @@ CREATE TABLE `visitors` (
 
 LOCK TABLES `visitors` WRITE;
 /*!40000 ALTER TABLE `visitors` DISABLE KEYS */;
-INSERT INTO `visitors` VALUES (1,'mario@gmail.com','Mario Lopez',NULL,NULL,NULL,'2025-05-19 17:51:29'),(2,'migue@gmail.com','Migue A',NULL,NULL,NULL,'2025-05-20 11:24:03'),(3,'latin@gmail.com','Alejandro Ar',NULL,NULL,NULL,'2025-05-20 11:25:44'),(4,'migel@gas.com','asdasd asd',NULL,NULL,NULL,'2025-05-22 17:35:02'),(5,'masdasdqwe@asd.com','asdaodsn iasjdn aisd',NULL,NULL,NULL,'2025-08-31 14:15:39'),(6,'asd1123@23s.com','asdasd asd asd',NULL,NULL,NULL,'2025-08-31 14:22:25'),(7,'pedroperez212@gmail.com','Pedro Perez',NULL,NULL,NULL,'2025-08-31 14:30:51'),(8,'asdwewe1212111@asd.com','Mar Perez',NULL,NULL,NULL,'2025-09-01 12:16:51'),(9,'jjujuju@asdasds.com','asda dasda sd1',NULL,NULL,NULL,'2025-09-03 18:06:09'),(10,'13aasdasdaasdasdq@asd.com','asdasd asdasdasd',NULL,NULL,NULL,'2025-09-03 18:06:39');
 /*!40000 ALTER TABLE `visitors` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -137,4 +135,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-03 17:14:39
+-- Dump completed on 2025-11-17 12:46:46
