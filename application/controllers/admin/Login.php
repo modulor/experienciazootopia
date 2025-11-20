@@ -60,7 +60,7 @@ class Login extends CI_Controller
       'message' => 'Correo electrónico y/o contraseña incorrecto(s)'
     );
 
-    if ($form['email'] == 'privacidad@celebrando30toystory.com' && $form['password'] == '1q2w3e') {
+    if ($form['email'] == 'privacidad@experienciazootopia.com' && $form['password'] == '1q2w3e') {
       $user_session = array(
         'login' => true,
         'success' => true
