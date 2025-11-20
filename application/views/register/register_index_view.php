@@ -1,4 +1,4 @@
-<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para disfrutar la experiencia Zootopia 2</strong></p>
+<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para conocer a uno de los personajes de Zootopia 2</strong></p>
 <form action="<?php echo base_url('register/create') ?>" method="post" class="parsley-form">
   <div class="form-group">
     <label for="email">Correo electrónico</label>

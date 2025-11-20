@@ -1,7 +1,7 @@
 <div class="nick-and-judy">
   <img src="<?php echo base_url('assets/img/nick-and-judy.png') ?>" alt="Zootopia 2">
 </div>
-<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para disfrutar la experiencia Zootopia 2</strong></p>
+<p class="text-center mb-4 font-14"><strong>Reg&iacute;strate para conocer a uno de los personajes de Zootopia 2</strong></p>
 <form action="<?php echo base_url('reservation/create') ?>" method="post" class="parsley-form">
   <div class="form-group">
     <label for="dates_available_id">Fechas disponibles</label>

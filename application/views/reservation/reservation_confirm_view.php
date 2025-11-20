@@ -14,8 +14,8 @@
 <p><strong class="text-success">ACOMPAÑANTES:</strong> <?php echo $reservation->total_attendees - 1 ?></p>
 <p>
   <strong class="text-success">DIRECCIÓN:</strong>
-  <a target="_blank" href="https://maps.app.goo.gl/ZLp9DfeF6dAj8xVq7">
-    Cinemex Parque Delta
+  <a target="_blank" href="https://maps.app.goo.gl/vvHQDgAAnG1nvMLG7">
+    ARTZ Pedregal
   </a>
 </p>
 <input type="hidden" name="rid" id="rid" value="<?php echo $reservation->id ?>">

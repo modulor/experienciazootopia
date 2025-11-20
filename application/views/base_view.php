@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-  <div class="copyright">&copy; Disney</div>
+  <div class="copyright">&copy; Disney 2025</div>
   <script>
     const baseURL = '<?php echo base_url() ?>'
   </script>
