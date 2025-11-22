@@ -29,4 +29,14 @@ class Dates_available_model extends CI_Model
   {
     return $this->db->get('dates_available')->result();
   }
+
+  public function get_total_attendees_available()
+  {
+    $result = $this->db->select_sum('attendees_available')
+      ->where('available', 1)
+      ->get('dates_available')
+      ->row();
+
+    return $result->attendees_available;
+  }
 }

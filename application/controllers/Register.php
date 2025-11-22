@@ -9,10 +9,12 @@ class Register extends CI_Controller
 
   public function index()
   {
+    $content_view = $this->isSoldOut() ? 'register/sold_out_view' : 'register/register_index_view';
+
     $data = array(
       '_js' => array('js/register.js'),
       '_css' => array('register.css'),
-      'content_view' => 'register/register_index_view',
+      'content_view' => $content_view,
     );
 
     $this->load->view('base_view', $data);
@@ -118,5 +120,18 @@ class Register extends CI_Controller
   private function showRegistrationError()
   {
     redirect(base_url('register/register_error'), 'refresh');
+  }
+
+  private function isSoldOut()
+  {
+    $this->load->model('Dates_available_model');
+
+    $total_dates_available = $this->Dates_available_model->get_total_attendees_available();
+
+    if ($total_dates_available <= 0) {
+      return true;
+    }
+
+    return false;
   }
 }
